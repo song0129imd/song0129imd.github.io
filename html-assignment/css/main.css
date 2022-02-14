@@ -1,0 +1,42 @@
+/* css comment */
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header,footer{
+    background-color: lightpink;
+}
+
+.green{
+    color: green;
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ul :nth-child(odd){
+    background-color: lime;
+}
+
+nav .no-bullets{
+    list-style-type: none;
+}
+
+a:link, a:visited{
+    background-color: white;
+    color:mediumpurple;
+    text-decoration: none;
+    border: 5px greenyellow;
+}
+
+a:hover, a:active{
+    background-color: palegreen;
+    color: white;
+}

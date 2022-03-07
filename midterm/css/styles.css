@@ -9,8 +9,7 @@ html{
     box-sizing: inherit;
 }
 
-
-
+/* to set the overall structure */
 body{
     background-color: #aad4cf;
     color: black;
@@ -25,7 +24,7 @@ body{
     background-color: #d5e9e7;
 }
 
-/* using the wide image as the background */
+/* using the wide image as background image of the first section */
 .firstsection{
     background-image: url(../images/lone-starfish-wide.jpg);
     width: 1000px;
@@ -33,18 +32,19 @@ body{
 }
 
 .headingpart{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: white;
-    left: 400px;
+    left: 350px;
     line-height: 400px;
     position: relative;
     z-index: 1;
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
     width: 230px;
     font-size: 1.5rem;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -53,18 +53,17 @@ a:link, a:visited {
     color:black;
     line-height: 40px;
 }
+
 .box {
     width: 33.3%;
     height: 50px;
     float: left;
 }
 
-
-
+/* from here to start the paragraph with h2  */
 h2{
     font-size: 2rem;
     margin-left: 20px;
-
 }
 
 .float img{
@@ -75,15 +74,16 @@ h2{
     margin-bottom: 20px;
 }
 
-ul li{
-    list-style-type: disc;
-    list-style-position: inside;
-}
-
+/* adjust numbers to match margins */
 p{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 1.5rem;
+}
+
+ul li{
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .borderform{
@@ -99,10 +99,6 @@ ul{
     margin-bottom: 0.5rem;
 }
 
-label {
-    margin-left: 20px;
-}
-
 input, textarea {
     width:90%;
     padding:12px 20px;
@@ -110,18 +106,36 @@ input, textarea {
     margin-left: 10px;
 }
 
-
+label {
+    margin-left: 20px;
+}
 
 .question{
     margin-left: 20px;
 }
 
-.radio{
+/* try this code to put the radio answers to fit in one line, didnot work - input #yes, #no, #maybe {
     display: inline;
+} */
+
+button{
+    margin-left: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
 }
 
 footer {
     padding:20px;
     margin-right: 20px;
     text-align: right;
+}
+
+span{
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 1px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }

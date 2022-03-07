@@ -12,14 +12,12 @@
     <div class="wrapper">
         <section class="firstsection">
             <h1 class="headingpart">Lone Starfish</h1>
-           
-            
         </section>
-    
+        <!-- use inline block to build navigation -->
         <nav>
         <ul>
             <li class="box"><a href="#">Home</a></li>
-            <li class="box"><a href="#">Story</a></li>
+            <li class="box" id="middle"><a href="#">Story</a></li>
             <li class="box"><a href="#">Contact</a></li>
         </ul>
         </nav>
@@ -37,17 +35,18 @@
             <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
         </ul>
-
+        
         <h2>Contact to learn more</h2>
-        <section class="borderform"> 
-            <!-- to create border for the form -->
+        <form class="borderform"> 
+        
+        <!-- to create border for the form -->
         <div>
             <label for="name">Your Name</label>
             <input type="text" id="name" name="yourname">
         </div>
         <div>
             <label for="email">Your Email</label>
-            <input type="email" id="youremail" name="youremail">
+            <input type="email" id="email" name="youremail">
         </div>
         <div>
             <label for="message">Your Message</label>
@@ -67,8 +66,9 @@
         <div>
             <button type="submit">SEND</button>
         </div>
-        </section>
-        <footer>c Lone Starfish</footer>
+        </form>
+    
+        <footer><span>c</span> Lone Starfish.</footer>
     </div>
 </body>
 </html>

@@ -99,7 +99,8 @@ ul{
     margin-bottom: 0.5rem;
 }
 
-input, textarea {
+/* creates area to fill for the form underneath */
+#name, #email, #message {
     width:90%;
     padding:12px 20px;
     margin: 8px 0;
@@ -112,11 +113,13 @@ label {
 
 .question{
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-/* try this code to put the radio answers to fit in one line, didnot work - input #yes, #no, #maybe {
-    display: inline;
-} */
+.radio{
+    margin-bottom: 20px;
+
+}
 
 button{
     margin-left: 20px;

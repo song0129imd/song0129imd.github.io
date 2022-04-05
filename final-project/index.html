@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - Song0129</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4daac5ac50.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- first section of the website-->
+    <!-- header of the website-->
     <div class="header w">
         <img src="images/logo.png" alt="company logo">
         <nav>
@@ -22,26 +27,23 @@
         </nav>
         <div class="search">
          <input type="text">
-         <button></button>
+         <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
     </div>
     <!-- content area of the website -->
     <div class="banner">
-        <!-- backgroud image insert here -->
-        <div class="transparent box">
         <h1>Welcome to Three Star Media</h1>
         <!-- use inner container to center at destop  -->
-        
+        <img src="images/main-banner.jpg" alt="office">
+        <div class="transparent box"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi accusantium non reiciendis molestias, nemo doloremque eos optio earum ea, cupiditate placeat ipsam, libero illo? Amet optio recusandae voluptate repellat!</p>
         <button>
-            Contact with us
+            Connect with us<i class="fa-solid fa-caret-right"></i>
         </button>
-        </div>
-
     </div>
 
     <div class="aboutus">
-        <img src="images/about-us.jpg" alt="office">
+        <img src="images/about-us.jpg" alt="meeting room">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi consequatur. Beatae magni minima nisi similique ea provident temporibus debitis iste qui pariatur animi, officiis dolor nostrum laudantium, praesentium blanditiis?</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nostrum modi omnis, et voluptatem incidunt ipsa neque, quaerat sint dolor voluptate. Neque accusantium earum culpa molestias nemo. Esse, dignissimos autem.</p>
@@ -55,7 +57,7 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt in voluptatum, nisi eaque quo maxime quas alias quos aliquam excepturi ab qui itaque obcaecati. Debitis eaque rem dolores hic.
         </p>
-        <button>Digital Plans</button>
+        <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
     </div>
 
@@ -64,35 +66,35 @@
         <h2>Marketing</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti consequuntur alias inventore dolore veniam animi odit. Est nobis obcaecati ad, dicta deleniti fugit, ab odit mollitia, totam inventore perferendis!
         </p>
-        <button>Marketing Plans</button>
+        <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
     <div class="video">
         <img src="images/video.jpg" alt="holding the phone">
         <h4>Video Production</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illum ea temporibus veritatis placeat possimus, voluptate numquam magni, nemo quibusdam qui nam quae ipsa cum provident mollitia illo odit amet.</p>
-        <button>Video Plans</button>
+        <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
 
     </div>
     <div class="web">
         <img src="images/web.jpg" alt="phone on cashier">
         <h4>Web Development</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error vitae quam nisi quidem atque praesentium perferendis culpa iste, eligendi repellat animi dolore iusto. Animi cupiditate quam excepturi id dicta.</p>
-        <button>Web Plans</button>
+        <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
     <div class="print">
         <img src="images/print.jpg" alt="news stand">
         <h4>Print</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum laudantium reiciendis id impedit cupiditate. Et labore quis quae numquam necessitatibus qui delectus recusandae, dolore quas asperiores omnis suscipit ullam ex.</p>
-        <button>Print Plans</button>
+        <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
     <div class="vision">
         <!-- background image place here-->
         <h4>Our Vision</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae corporis, natus doloremque adipisci distinctio, officiis voluptate dolore rerum tenetur animi exercitationem quam voluptas autem? Ut ex soluta dolores labore?</p>
-        <button>Learn More</button>
+        <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
     </div>
 
     <div>
@@ -121,7 +123,7 @@
         <input type="text" id="name" name="full name">
         <label for="email">Email</label>
         <input type="email" id="email" name="email">
-        <lable for="message">Message</lable>
+        <label for="message">Message</label>
         <textarea id="message" name="message"></textarea>
         <button type="submit">Send</button>
     </form>
@@ -139,14 +141,14 @@
         </tr>
     </table>
 
-    <h2>Location</h2>
     <section class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9900.874021641015!2d-75.76448276521167!3d45.34609061141822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1649119699833!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9900.874021641015!2d-75.76448276521167!3d45.34609061141822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1649119699833!5m2!1szh-CN!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
     </section>
 
     <footer>
         <p>&copy; Copyright Three Star Media, 2020</p>
-        <p>All images are taken from Unsplash</p>
+        <p>All images are taken from <a href="#">Unsplash</a></p>
     </footer>
 
     

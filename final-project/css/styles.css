@@ -1,3 +1,23 @@
+/* google font */
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     background-color: aquamarine;
+}
+/* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
+
+header{
+
+}
+
+/* section for welcome contains a bg image w centered rgba block containing a header, paragraph and button */
+
+/* about has an image on the left and text on the right, needs to be two columns with a solid bg */
+
+.maps iframe {
+    border:0;
+    width: 600px;
+    height:450px;
 }

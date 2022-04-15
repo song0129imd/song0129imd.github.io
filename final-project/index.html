@@ -16,11 +16,12 @@
     <!-- header of the website-->
     <div class="header w">
         <!-- logo section -->
-        <div class="logo">
-            <img src="images/logo.png" alt="company logo">
-        </div>
-        <!-- navigation section -->
-            <nav>
+        <nav class="main-nav">
+
+            <div class="logo-image">
+                <img src="images/logo.png" alt="company logo" class="logo">
+            </div>
+                <!-- navigation section -->
                 <ul>
                     <li class="home"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -28,72 +29,80 @@
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
+        
         <!-- search bar -->
-        <div class="search">
-         <input type="text" value="Search">
-         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
+            <div class="search">
+                <input type="text" value="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
     </div>
-    <!-- banner area of the website -->
-    <div class="banner w">
-        <h1>Welcome to Three Star Media</h1>
-        <!-- use inner container to center at destop  -->
-        <img class="mainbanner" src="images/main-banner.jpg" alt="office">
-        <div class="transparent box"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi accusantium non reiciendis molestias, nemo doloremque eos optio earum ea, cupiditate placeat ipsam, libero illo? Amet optio recusandae voluptate repellat!</p>
-        <button>
-            Connect with us<i class="fa-solid fa-caret-right"></i>
-        </button>
+    <!-- main banner area of the website -->
+    <div class="banner">
+        <div class="box">
+            <h1>Welcome to Three Star Media</h1>
+            <!-- use inner container to center at destop  -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi accusantium non reiciendis molestias, nemo doloremque eos optio earum ea, cupiditate placeat ipsam, libero illo? Amet optio recusandae voluptate repellat!</p>
+            <button class="shop">
+                Connect with us<i class="fa-solid fa-caret-right"></i>
+            </button>
+        </div>
     </div>
 
     <div class="aboutus">
-        <img src="images/about-us.jpg" alt="meeting room">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi consequatur. Beatae magni minima nisi similique ea provident temporibus debitis iste qui pariatur animi, officiis dolor nostrum laudantium, praesentium blanditiis?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nostrum modi omnis, et voluptatem incidunt ipsa neque, quaerat sint dolor voluptate. Neque accusantium earum culpa molestias nemo. Esse, dignissimos autem.</p>
-    </div>
-
-    <div>
-        <h2>Our Services</h2>
-        <div class="service">
-        <img src="images/digital.jpg" alt="digital laptop and phone">
-        <h4>Digital Transformation</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt in voluptatum, nisi eaque quo maxime quas alias quos aliquam excepturi ab qui itaque obcaecati. Debitis eaque rem dolores hic.
-        </p>
-        <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+        <div class="center">
+            <div class="box-about">
+                <img src="images/about-us.jpg" alt="meeting room" class="us">
+            </div>
+            <div class="right">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eligendi consequatur. Beatae magni minima nisi similique ea provident temporibus debitis iste qui pariatur animi, officiis dolor nostrum laudantium, praesentium blanditiis?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nostrum modi omnis, et voluptatem incidunt ipsa neque, quaerat sint dolor voluptate. Neque accusantium earum culpa molestias nemo. Esse, dignissimos autem.</p>
+            </div>
         </div>
     </div>
 
-    <div class="marketing">
-        <img src="images/marketing.jpg" alt="marketing laptop">
-        <h2>Marketing</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti consequuntur alias inventore dolore veniam animi odit. Est nobis obcaecati ad, dicta deleniti fugit, ab odit mollitia, totam inventore perferendis!
-        </p>
-        <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
-    </div>
+    <section class="cards">
+        <div class="headline"><h2>Our Services</h2></div>
+        <div class="c service">
+            <img src="images/digital.jpg" alt="digital laptop and phone">
+            <h4>Digital Transformation</h4>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt in voluptatum, nisi eaque quo maxime quas alias quos aliquam excepturi ab qui itaque obcaecati. Debitis eaque rem dolores hic.
+            </p>
+            <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    
 
-    <div class="video">
-        <img src="images/video.jpg" alt="holding the phone">
-        <h4>Video Production</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illum ea temporibus veritatis placeat possimus, voluptate numquam magni, nemo quibusdam qui nam quae ipsa cum provident mollitia illo odit amet.</p>
-        <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
+        <div class="c marketing">
+            <img src="images/marketing.jpg" alt="marketing laptop">
+            <h4>Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti consequuntur alias inventore dolore veniam animi odit. Est nobis obcaecati ad, dicta deleniti fugit, ab odit mollitia, totam inventore perferendis!
+            </p>
+            <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
 
-    </div>
-    <div class="web">
-        <img src="images/web.jpg" alt="phone on cashier">
-        <h4>Web Development</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error vitae quam nisi quidem atque praesentium perferendis culpa iste, eligendi repellat animi dolore iusto. Animi cupiditate quam excepturi id dicta.</p>
-        <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
-    </div>
+        <div class="c video">
+            <img src="images/video.jpg" alt="holding the phone">
+            <h4>Video Production</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illum ea temporibus veritatis placeat possimus, voluptate numquam magni, nemo quibusdam qui nam quae ipsa cum provident mollitia illo odit amet.</p>
+            <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
 
-    <div class="print">
-        <img src="images/print.jpg" alt="news stand">
-        <h4>Print</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum laudantium reiciendis id impedit cupiditate. Et labore quis quae numquam necessitatibus qui delectus recusandae, dolore quas asperiores omnis suscipit ullam ex.</p>
-        <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
-    </div>
+        <div class="c web">
+            <img src="images/web.jpg" alt="phone on cashier">
+            <h4>Web Development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error vitae quam nisi quidem atque praesentium perferendis culpa iste, eligendi repellat animi dolore iusto. Animi cupiditate quam excepturi id dicta.</p>
+            <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+
+        <div class="c print">
+            <img src="images/print.jpg" alt="news stand">
+            <h4>Print</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum laudantium reiciendis id impedit cupiditate. Et labore quis quae numquam necessitatibus qui delectus recusandae, dolore quas asperiores omnis suscipit ullam ex.</p>
+            <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+</section>
 
     <div class="vision">
         <!-- background image place here-->

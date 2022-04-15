@@ -1,14 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
 /* google font */
 html{
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    background-color: aquamarine;
+.w {
+    width: 1400px;
+    margin: auto;
 }
-/* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
 
-header{
+.header {
+    height: 960px;
+    width: 90%;
+    margin:0 auto;
+    padding: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #c68c2b;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+    
+/* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
+/* progressive enhancement */
+@media screen and (min-width: 600px) {
+    .header {
+        width: 600px;
+        height: 530px;
+        background-color: black;
+    }
+
+    .logo{
+        background-color: #c68c2b;
+        height: 180px;
+    } 
+
+    nav ul li {
+        text-align: center;
+        padding: 20px;
+    }
+  
+    .search input {
+        margin-left: 10px;
+        width: 520px;
+        height: 30px;
+        color:#757575;
+        font-size: 14px;
+    }
+    .search button {
+        margin-left: -5px;
+        width: 30px;
+        height: 30px;
+        border:1px solid #c68c2b;
+        background-color: black;
+        color:#c68c2b;  
+    }
+
+    .banner {
+        height: 320px;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    img .mainbanner {
+        height: 320px;
+        width: 600px;
+    }
+
+    
+        
+
+  
+        
+
+}
+
+@media screen and (max-width:1200px) {
+    .home{
+        background-color: #c68c2b;
+    }
+
+    .home a{
+        color:black;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 1200px;
+        height: 120px;
+        background-color: black;
+    }
+
+    .logo{
+        float: left;
+        height: 100px;
+        margin-left: 50px;
+    }
+
+    nav{
+        float: left;
+        margin-left: 80px;
+
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a {
+        display: block;
+        height: 70px;
+        padding: 0 10px;
+        line-height: 70px;
+    }
+
+    nav ul li a:hover {
+        color:black;
+        background-color: #c68c2b;
+        width: 100px;
+    }
+    .search {
+        float: left;
+        width: 260px;
+        height: 70px;
+        padding-top: 40px;
+    }
+
+    .search input{
+        float:left;
+        width: 220px;
+        height: 30px;
+        
+    }
+
+    .search button{
+        float:right;
+        width:30px;
+        height:30px;
+        border:1px solid #c68c2b;
+        background-color: black;
+        color:#c68c2b;    
+    }
+
+    .banner {
+        height: 600px;
+        /* background-image: url(../images/main-banner.jpg) no-repeat top center; */
+    }
+
+    img .mainbanner {
+        height: 600px;
+        width: 1200px;
+        
+    }
 
 }
 

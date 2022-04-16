@@ -193,6 +193,11 @@ nav ul li {
     max-width: 660px;
     width: 100%;
     margin: 0 auto;
+    background: url(../images/vision.jpg) no-repeat center center/cover;
+    font-size: 12px;
+    color:#fff;
+    line-height: 18px;
+    padding: 20px;
 }
 
 .vision button {
@@ -217,15 +222,72 @@ nav ul li {
     padding: 20px 0;
 }
 
+/* team member */
+.member {
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
 
-.vision {
-    width: 110%;
-    height: 220px;
-    background: url(../images/vision.jpg) no-repeat center center/cover;
-    font-size: 12px;
-    color:#fff;
-    line-height: 18px;
-    padding: 20px;
+}
+.member h2{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.team .bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    width: 95%;
+    color:#c68c2b;
+    background-color: #c68c2b;
+}
+/* form section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+
+form p {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+textarea {
+    height: 100px;
+}
+
+form button {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    background-color: black;
+    color: #c68c2b;
+    font-size: 18px;  
+    margin: 20px 0;
 }
 
 
@@ -252,7 +314,7 @@ nav ul li {
         height: 30px;
         color:#757575;
         font-size: 12px;
-    } */
+    } 
 
     .search button {
         margin-left: -5px;
@@ -291,7 +353,7 @@ nav ul li {
         padding: 20px;
     }
     .cards {
-    height: 3500px;
+    height: 3300px;
     margin: 0 auto;
     width: 90%;
     max-width: 600px;
@@ -454,6 +516,45 @@ nav ul li {
         padding-left: 60px;
 
     }
+
+    /* team member section */
+
+    .member{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .title {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        font-size: 48px;
+        background-color: #fff;
+        
+    }
+
+    .team {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        
+    }
+
+    .bob {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    
+
+   
+
+
+
 
     
 

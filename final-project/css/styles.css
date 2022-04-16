@@ -140,7 +140,7 @@ nav ul li {
 }
 
 .cards {
-    height: 3500px;
+    /* height: 2000px; */
     margin: 0 auto;
     width: 90%;
     max-width: 600px;
@@ -188,6 +188,46 @@ nav ul li {
     margin-left: 20px;;
 }
 
+/* small banner section called our vision */
+.vision {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.vision button {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #c68c2b;
+    padding: 10px 20px;
+    background-color: #132840;
+    color:#fff;
+    font-size: 18px;  
+    margin: 20px 20px 20px auto;
+    padding: 20px;
+}
+
+.vision button i {
+    margin-left: 20px;
+}
+
+.vision h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+
+.vision {
+    width: 110%;
+    height: 220px;
+    background: url(../images/vision.jpg) no-repeat center center/cover;
+    font-size: 12px;
+    color:#fff;
+    line-height: 18px;
+    padding: 20px;
+}
+
 
 
 
@@ -195,11 +235,6 @@ nav ul li {
 /* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
 /* progressive enhancement */
 @media screen and (min-width: 600px) {
-    /* .header {
-        width: 600px;
-        height: 450px;
-        background-color: black;
-    }
 
     .logo-image {
         background-color: #c68c2b;
@@ -261,7 +296,10 @@ nav ul li {
     width: 90%;
     max-width: 600px;
     background-color: #fff;
-}
+    }
+
+
+
      
 
 } 
@@ -362,22 +400,66 @@ nav ul li {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         /* grid-template-rows: repeat(3, 1fr); */
-        grid-gap: 20px;
+        grid-gap: 10px;
         max-width: 1200px;
-        height:800px;
+        height:1500px; 
+        grid-template-areas: 
+        "boxo boxo boxo boxo boxo boxo"
+        "box1 box1 box1 box2 box2 box2"
+        "box3 box3 box4 box4 box5 box5"
     }
 
     .headline {
-        background-color: purple;
-        grid-column: 1/span 6;
-        height: 100px;
+        background-color: #fff;
+        /* height: 50px;  */
+        grid-area: boxo;
     }
 
     .cards img {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .service {
+        grid-area: box1;
+    }
+    .marketing {
+        grid-area: box2;
+    }
+
+    .video {
+        grid-area: box3;
+    }
+
+    .web {
+        grid-area: box4;
+    }
+
+    .print {
+        grid-area: box5;
+    }
+
+    .c button {
+        width: 60%;
+    }
+
+    .c {
+        margin:auto;
+    }
+
+    /* small banner */
+    .vision {
+        max-width: 1320px;
+        width: 100%;
+        padding-left: 60px;
 
     }
+
+    
+
+   
+
+
 
 
    

@@ -161,6 +161,7 @@ nav ul li a:hover {
 
 .c {
     background-color: #ffe6ab;
+    margin-bottom: 20px;
 }
 
 .c h4 {
@@ -177,7 +178,7 @@ nav ul li a:hover {
 
 .c img {
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 
 .c button {
@@ -452,9 +453,10 @@ footer a {
         grid-area: boxo;
     }
 
-    .cards img {
+    .c img {
         width: 100%;
         margin-bottom: 10px;
+        height: 350px;
     }
 
     .service {

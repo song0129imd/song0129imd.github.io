@@ -2,349 +2,51 @@
     box-sizing: border-box;
 }
 
-/* google font */
 html{
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
-    max-width: 1400px;
-    margin: auto;
-    padding: 10px;
-    width: 600px;
-    height: 450px;
-    background-color: black;
-}
+@media screen and (min-width: 600px) {
+    /* section for welcome contains a bg image w centered rgba block containing a header, paragraph and button */
+    .header {
+        max-width: 1400px;
+        margin: auto;
+        padding: 10px;
+        width: 600px;
+        height: 450px;
+        background-color: black;
+    }
 
-/* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
+    /* header acts as a parent for logo, nav and search. Nav is a column at mob and a row at desktop, use flex */
 /* progressive enhancement */
 
-nav ul li a {
-    font-size: 18px;
-    color: #c68c2b;
-    text-decoration: none;
-}
+    nav ul li a {
+        font-size: 18px;
+        color: #c68c2b;
+        text-decoration: none;
+    }
 
-li{
-    list-style: none;
-}
-
-.shop {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    padding: 10px 20px;
-    background-color: #c68c2b;
-    color:black;
-    font-size: 15px;
-}
-
-.banner {
-    width: 100%;
-    height: 500px;
-    background: url(../images/main-banner.jpg) no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    justify-content: space-evenly;
-}
-
-.box {
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    background-color: rgba(0,0,0, 0.3);
-}
-
-.box h1 {
-    font-size: 60px;
-    font-weight: bold;
-    color:#fff;
-    padding: 20px;
-}
-
-.box p {
-    font-size: 15px;
-    line-height: 30px;
-    padding: 20px;
-    color:#fff;
-}
-
-.box button {
-    height: 60px;
-    margin-left: 20px;
-}
-
-.box button i {
-    margin-left: 20px;
-}
-
-.aboutus{
-    width: 100%;
-    margin:0 auto;
-    background-color: #ffe6ab;
-}
-
-.logo-image {
-    background-color: #c68c2b;
-    height: 80px;
-} 
-
-nav ul li {
-    text-align: center;
-    padding: 20px;
-}
-
-.search input {
-    margin-left: 10px;
-    width: 520px;
-    height: 30px;
-    color:#757575;
-    font-size: 12px;
-}
-.search button {
-    margin-left: -5px;
-    width: 30px;
-    height: 30px;
-    border:1px solid #c68c2b;
-    background-color: black;
-    color:#c68c2b;  
-}
-
-.banner {
-    width: 600px;
-    margin: 0 auto;
-}
-
-.aboutus {
-    max-width: 600px;
-    height: 560px;
-
-}
-
-.aboutus h2 {
-    font-size: 36px;
-    font-weight: bold;
-    padding: 0 20px;
-
-}
-
-.aboutus p {
-    font-size: 15px;
-    padding: 15px 20px;
-    line-height: 22.5px;
-}
-
-.aboutus img {
-    width: 100%;
-    height: 300px;
-    padding: 20px;
-}
-
-.cards {
-    /* height: 2000px; */
-    margin: 0 auto;
-    width: 90%;
-    max-width: 600px;
-    background-color: #fff;
-}
-
-.cards h2 {
-    font-size: 36px;
-    padding: 20px;
-}
-
-.c {
-    background-color: #ffe6ab;
-}
-
-.c h4 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
-}
-.c p {
-    font-size: 15px;
-    padding: 0 20px;
-    line-height: 22.5px;
-}
-.c img {
-    width: 100%;
-    height: 400px;
-}
-
-.c button {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    height: 60px;
-    margin-left: 20px;
-    font-size: 18px;
-    background-color: black;
-    color: #fff;
-    padding: 0 20px;
-    margin: 20px;
-}
-
-.c button i {
-    margin-left: 20px;;
-}
-
-/* small banner section called our vision */
-.vision {
-    max-width: 660px;
-    width: 100%;
-    margin: 0 auto;
-    background: url(../images/vision.jpg) no-repeat center center/cover;
-    font-size: 12px;
-    color:#fff;
-    line-height: 18px;
-    padding: 20px;
-}
-
-.vision button {
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid #c68c2b;
-    padding: 10px 20px;
-    background-color: #132840;
-    color:#fff;
-    font-size: 18px;  
-    margin: 20px 20px 20px auto;
-    padding: 20px;
-}
-
-.vision button i {
-    margin-left: 20px;
-}
-
-.vision h4 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px 0;
-}
-
-/* team member */
-.member {
-    max-width: 600px;
-    width: 100%;
-    margin: 10px auto;
-
-}
-.member h2{
-    font-size: 36px;
-    font-weight: bold;
-    padding: 20px 0;
-}
-
-.team .bold{
-    font-size: 16px;
-    font-weight: bold;
-}
-
-hr {
-    height: 2px;
-    border-width: 0;
-    width: 95%;
-    color:#c68c2b;
-    background-color: #c68c2b;
-}
-/* form section */
-.last {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.last h2 {
-    font-size: 36px;
-    font-weight: bold;
-    padding: 20px 0;
-}
-
-.last p {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px 0;
-
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 1px solid black;
-}
-
-textarea {
-    height: 100px;
-}
-
-.last button {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    padding: 10px 20px;
-    background-color: black;
-    color: #c68c2b;
-    font-size: 18px;  
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid black;
-    padding: 20px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table th {
-    background-color: #ffe6ab;
-
-}
-
-footer {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: black;
-    color: #c68c2b;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-footer p{
-    padding: 10px;
-}
-
-footer a {
-    color: #c68c2b;
-}
-
-@media screen and (min-width: 600px) {
-
-    .logo-image {
-        background-color: #c68c2b;
-        height: 80px;
-    } 
+    li{
+        list-style: none;
+    }
 
     nav ul li {
         text-align: center;
         padding: 20px;
     }
-  
+
+    nav ul li a:hover {
+        color:black;
+        background-color: #c68c2b;
+    }
+
     .search input {
         margin-left: 10px;
         width: 520px;
         height: 30px;
         color:#757575;
         font-size: 12px;
-    } 
+    }
 
     .search button {
         margin-left: -5px;
@@ -354,6 +56,67 @@ footer a {
         background-color: black;
         color:#c68c2b;  
     }
+
+    .shop {
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        padding: 10px 20px;
+        background-color: #c68c2b;
+        color:black;
+        font-size: 15px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 500px;
+        background: url(../images/main-banner.jpg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: rgba(0,0,0, 0.3);
+    }
+
+    .box h1 {
+        font-size: 60px;
+        font-weight: bold;
+        color:#fff;
+        padding: 20px;
+    }
+
+    .box p {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 20px;
+        color:#fff;
+    }
+
+    .box button {
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .box button i {
+        margin-left: 20px;
+    }
+
+    .aboutus{
+        width: 100%;
+        margin:0 auto;
+        background-color: #ffe6ab;
+    }
+
+    .logo-image {
+        background-color: #c68c2b;
+        height: 80px;
+    } 
 
     .banner {
         width: 600px;
@@ -369,7 +132,7 @@ footer a {
         font-size: 36px;
         font-weight: bold;
         padding: 0 20px;
-    } 
+    }
 
     .aboutus p {
         font-size: 15px;
@@ -382,15 +145,201 @@ footer a {
         height: 300px;
         padding: 20px;
     }
+
     .cards {
-    height: 3300px;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 600px;
-    background-color: #fff;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 600px;
+        background-color: #fff;
     }
 
-} 
+    .cards h2 {
+        font-size: 36px;
+        padding: 20px;
+    }
+
+    .c {
+        background-color: #ffe6ab;
+    }
+
+    .c h4 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .c p {
+        font-size: 15px;
+        padding: 0 20px;
+        line-height: 22.5px;
+    }
+    .c img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .c button {
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        height: 60px;
+        margin-left: 20px;
+        font-size: 18px;
+        background-color: black;
+        color: #fff;
+        padding: 0 20px;
+        margin: 20px;
+    }
+
+    .c button i {
+        margin-left: 20px;;
+    }
+
+    .print {
+        margin-bottom: 20px;
+    }
+
+    /* small banner section called our vision */
+    .vision {
+        max-width: 660px;
+        width: 100%;
+        margin: 0 auto;
+        background: url(../images/vision.jpg) no-repeat center center/cover;
+        font-size: 12px;
+        color:#fff;
+        line-height: 18px;
+        padding: 20px;
+    }
+
+    .vision button {
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid #c68c2b;
+        padding: 10px 20px;
+        background-color: #132840;
+        color:#fff;
+        font-size: 18px;  
+        margin: 20px 20px 20px auto;
+        padding: 20px;
+    }
+
+    .vision button i {
+        margin-left: 20px;
+    }
+
+    .vision h4 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    /* team member */
+    .member {
+        max-width: 600px;
+        width: 100%;
+        margin: 10px auto;
+
+    }
+    .member h2{
+        font-size: 36px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    .team .bold{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 2px;
+        border-width: 0;
+        width: 95%;
+        color:#c68c2b;
+        background-color: #c68c2b;
+    }
+    /* form section */
+    .last {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .last h2 {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    .last p {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+input, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* the last section of the website contain contact form and map use grid */
+.last button {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    background-color: black;
+    color: #c68c2b;
+    font-size: 18px;  
+    margin: 20px 0;
+}
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table th {
+        background-color: #ffe6ab;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: black;
+        color: #c68c2b;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    footer p{
+        padding: 10px;
+    }
+
+    footer a {
+        color: #c68c2b;
+    }
+
+    .maps iframe {
+        border:0;
+        width: 600px;
+        height:450px;
+    }
+
+}
+
 
 @media screen and (max-width:1200px) {
     .home{
@@ -399,7 +348,6 @@ footer a {
 
     .home a{
         color:black;
-        
     }
 
 }
@@ -433,26 +381,27 @@ footer a {
         width: 100px;
     }
     .search {
-        float: left;
+        display: flex;
         width: 260px;
         height: 70px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
     .search input{
-        float:left;
+        
         width: 220px;
         height: 30px;
     }
 
     .search button{
-        float:right;
         width:30px;
         height:30px;
         border:1px solid #c68c2b;
         background-color: black;
-        color:#c68c2b;    
+        color:#c68c2b;  
+        margin-top: 10px;  
     }
+
     .banner {
         width: 1200px;
     }
@@ -467,6 +416,8 @@ footer a {
         padding-top: 60px;
     }
 
+    /* about has an image on the left and text on the right, needs to be two columns with a solid bg */
+
     .aboutus {
         max-width: 1200px;
         height: 300px;
@@ -475,14 +426,13 @@ footer a {
     .center {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 85%;
-        
+        width: 85%;   
     }
 
     .right {
         margin-top: 20px;
     }
-/* sections contain image and text using grid */
+    /* sections contain image and text using grid */
     .cards {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -553,8 +503,7 @@ footer a {
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         font-size: 48px;
-        background-color: #fff;
-        
+        background-color: #fff;   
     }
 
     .team {
@@ -563,8 +512,6 @@ footer a {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        
     }
 
     .bob {
@@ -578,8 +525,6 @@ footer a {
         margin: 0 auto;
         max-width: 1200px;
         width: 100%;
-       
-
     }
 
     .contact {
@@ -604,44 +549,15 @@ footer a {
     }
 
     footer {
-        max-width:1600px;
-        width: 100%;
-       
+        max-width:2000px;
+        width: 100%;   
     }
 
     footer p {
         width:100%;
         margin: 0 auto;
         max-width:1200px;
-
     }
 
-   
-    
-
-   
-
-
-
-
-    
-
-   
-
-
-
-
-   
-
-
 }
 
-/* section for welcome contains a bg image w centered rgba block containing a header, paragraph and button */
-
-/* about has an image on the left and text on the right, needs to be two columns with a solid bg */
-
-.maps iframe {
-    border:0;
-    width: 600px;
-    height:450px;
-}

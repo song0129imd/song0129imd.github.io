@@ -26,6 +26,12 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
   </style>
 </head>
 <body>
@@ -34,17 +40,26 @@
   <header>
     <nav class="nav-wrapper transparent">
       <div class="container">
-        <a href="#" class="brand-logo">Qing Song</a>
+        <a href="#" class="brand-logo grey-text text-darken-4">Qing Song</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
           <i class="material-icons">menu</i>
         </a>
-        <ul class="right hide-on-med-and-down grey">
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="right hide-on-med-and-down grey-text text-darken-4">
+          <li><a href="#photos">Specialization</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small grey darken-2" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#">About me</a></li>
+          <li><a href="#">Specialization</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -53,13 +68,13 @@
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="photos">
+  <section class="container section scrollspy" id="photos">
     <div class="row">
       <div class="col s12 l4">
           <img src="img/code.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">HTML & CSS</h2>
+        <h2 class="black-text text-darken-4">HTML & CSS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
       </div>
     </div>
@@ -68,7 +83,7 @@
           <img src="img/js.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <h2 class="indigo-text text-darken-4">Javascript</h2>
+        <h2 class="black-text text-darken-4">Javascript</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
       </div>
     </div>
@@ -77,20 +92,133 @@
           <img src="img/laptop.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">UX Design</h2>
+        <h2 class="black-text text-darken-4">UX Design</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
       </div>
     </div>
   </section>
+
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/canyon.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
 
   <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="grey-text text-darken-2">What I do..</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active black-text text-darken-4">Web Development</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="black-text text-darken-4">Content Management System</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text grey-text text-darken-2">Web Development</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        <div id="editing" class="col s12">
+            <p class="flow-text grey-text text-darken-2">CMS</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/banner.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
 
   <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="grey-text text-darken-2">Get in Touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photo Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2023 Qing Song</div>
+    </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -100,85 +228,16 @@
 
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
 
     });
   </script>
 </body>
 </html>
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <title>my first webpage</title>
-    </head>
-    <body>
-        <header>
-            <h1>first level heading</h1>
-            <h2>second level heading</h2>
-            <h3>third level heading</h3>
-            <h6>sixth (final) level heading</h6>
-        </header>
-        <hr>
-        <main>
-            <h2>text based tags</h2>
-
-            <h3>paragraphs</h3>
-            <p>this is a basic paragraph</p>
-            <p>this is a second paragraph</p>
-
-            <h3>quote</h3>
-            <p><q>curiosity drives creativity</q>curiosity drives creativity</p>
-            <h3>blockquote</h3>
-            <blockquote>to be or not to be. that is the question
-                <cite>Shakesphere</cite>
-            </blockquote>
-            <h3>Italic and Bold</h3>
-            <p>some words are <em>emphasis</em> others are <strong>strong</strong></p>
-            <h3>Abbreviation</h3>
-            <p>project Atigi proceeds will go to <abbr title="Inuit Titanium Kutup"> ITK</abbr></p>
-            <h3>highlight text</h3>
-            <p>i would like to contribute <mark>back to the community</mark></p>
-            <h3>superscript and subscript</h3>
-            <p>I would enjoy the O<sub>2 </sub>on the 10<sup>th</sup>.</p>
-            <h3>deleted content</h3>
-            <p>i would love to <del>sell</del> buy the whole collection.</p>
-            <h3>address</h3>
-            <address>
-                1385 woodroof ave, <br>
-                Ottawa, Ontario
-            </address>
-
-            <h2>HTML lists</h2>
-            <h3>Unordered list</h3>
-            <ul>
-                <li>apples</li>
-                <li>kiwi</li>
-                <li>pineapple</li>
-            </ul>
-            <h3>Ordered list</h3>
-            <ol>
-                <li>prepare a clean bun</li>
-                <li>20ml of olive oil</li>
-                <li>put on your fav dress</li>
-                <li>creamcheese</li>
-            </ol>
-            <h3>defination list</h3>
-            <dl>
-                <dt>first name</dt>
-                <dd>Sophie</dd>
-
-                <dt>last name</dt>
-                <dd>Song</dd>
-            </dl>
-            
-        </main>
-        <hr>
-        <footer>
-            <p>copyright 2022 Mcgrill</p>
-        </footer>
-    </body>
-</html> -->
